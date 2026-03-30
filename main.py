@@ -4,23 +4,23 @@ from datetime import datetime, timedelta
 import pytz
 import os
 import calendar
-    from flask import Flask
-    from threading import Thread
-    import os
+from flask import Flask
+from threading import Thread
+import os
 
-    app = Flask(__name__)
+app = Flask(__name__)
 
-    @app.route("/")
-    def home():
-        return "Bot de ñoquis activo 🍝"
+@app.route("/")
+def home():
+     return "Bot de ñoquis activo 🍝"
 
-    def run():
-        port = int(os.environ.get("PORT", 8080))
-        app.run(host="0.0.0.0", port=port)
+def run():
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
 
-    def keep_alive():
-        t = Thread(target=run)
-        t.start()
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
 
 
 TOKEN = os.getenv("DISCORD_TOKEN")
