@@ -6,7 +6,6 @@ import os
 import calendar
 from flask import Flask
 from threading import Thread
-import os
 
 app = Flask(__name__)
 
