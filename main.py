@@ -98,7 +98,7 @@ async def chequeo():
                 )
 
             if ahora.day == 29:
-                await canal.send("🍝 Hoy es día de ñoquis! Con amor, Agus")
+                await canal.send("🍝 Hoy es día de ñoquis! Coman rico❤️, pongan plata abajo del plato (si tienen esa costumbre), manden sus fotitos por aca. Con amor, Agus")
 
         ultimo_mensaje = ahora.date()
 
